@@ -1,0 +1,44 @@
+.content {}
+
+.container-one {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.menu {
+    width: 1140px;
+    background-color: #F1F1F1;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: none;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+.content__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52.8px;
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+
+.content-list {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 70px;
+    color: #02535F;
+    text-decoration: none;
+}
+
+.link {
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #000;
+}

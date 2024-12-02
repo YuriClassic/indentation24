@@ -1,0 +1,30 @@
+.margin {}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.section__text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.section__text:last-child {
+    margin-bottom: 0px;
+}

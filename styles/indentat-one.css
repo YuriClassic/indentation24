@@ -1,0 +1,78 @@
+.indentat-one {}
+
+.indentation__title {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43.2px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+strong {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+i {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+.item:last-child {
+    margin-bottom: 0;
+}
+.item-fig {
+    width: 560px;
+    height: 415px;
+    float: left;
+    margin-right: 30px;
+    
+}
+
+.item-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.item-one {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFF;
+    color: #000;
+    padding-right: 10px;
+
+}
+
+.item-one:last-child {
+    padding-bottom: 85px;
+}
+
+.item-fig2 {
+
+    width: 560px;
+    height: 279px;
+    float: right;
+    margin-left: 40px;
+}
+
+.item-text:last-child {
+    margin-bottom: 0px;
+}

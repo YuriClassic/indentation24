@@ -1,0 +1,33 @@
+.itogi {}
+
+.itog {
+    width: 1140px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 25px 30px 25px 45px;
+    margin-bottom: 25px;
+}
+
+.itog__title {
+    margin-bottom: 20px;
+}
+
+ul li:before {
+    content: "—";
+    position: relative;
+    left: -5px;
+}
+
+.text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+
+}
+
+.itog-list {
+    margin-bottom: 30px;
+}

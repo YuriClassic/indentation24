@@ -1,0 +1,82 @@
+.indentat-two {}
+
+.indentation__title {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43.2px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.item-fig3 {
+    width: 1080px;
+    height: 537px;
+    margin-bottom: 30px;
+}
+
+.item-fig4 {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.item-fig5 {
+    width: 1080px;
+    height: 427px;
+}
+
+.img-border {
+    border-style: solid none none;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.border {
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: #000;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+.item-text3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.border-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFF;
+    color: #5E5E5E;
+    padding: 15px 0px;
+}
+
+.item__img6 {
+    padding: 0px 60.11px 0px 56.89px;
+}
+
+.item-fig6 {
+    width: 964px;
+    height: 164px;
+    margin-bottom: 30px;
+}
+
+.item-fig7 {
+    width: 1022px;
+    height: 504px;
+    margin-bottom: 30px;
+}
+
+.item__img7 {
+    padding: 0px 27.95px 0px 30.05px;
+}

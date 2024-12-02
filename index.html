@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="./font/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./font/Roboto-Italic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./font/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./font/Roboto-Black.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Indentation</title>
+</head>
+
+<body>
+    <article class="indentation">
+        <section class="section margin">
+            <div class="container">
+                <h1 class="section__title">Отступы в верстке: margin и padding</h1>
+                <p class="section__text">В этой статье я рассмотрю самые популярные "стандартные" решения для
+                    сохранения смысла
+                    и хорошей читаемости вашего кода. Если точнее - речь пойдет об основных правилах организации
+                    отступов. Они сильно влияют на общую функциональность кода и, если все сделано верно, позволяют
+                    легко
+                    вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
+                </p>
+                <p class="section__text">
+                    Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы.
+                    Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более
+                    опытных
+                    верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
+                </p>
+
+            </div>
+        </section>
+        <section class="section content">
+            <div class="container-one">
+                <div class="menu">
+                    <h2 class="content__title">Содержание:</h2>
+                    <nav>
+                        <ol class="content-list">
+                            <li>
+                                <a class="link" href="#indentation">Отступ задается от предыдущего элемента к
+                                    следующему</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#indentation2">Отступ задается последнему возможному элементу в
+                                    DOM-дереве</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#indentation3">Для последнего элемента группы отступ
+                                    обнуляется</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="section indentat-one">
+            <div class="container" id="indentation">
+                <h2 class="indentation__title">Отступ задается от предыдущего элемента к следующему: от первого ко
+                    второму, сверху вниз, слева направо.
+                </h2>
+                <div class="item">
+                    <figure class="item-fig">
+                        <img class="item-fig__img" src="./img/indentat-one/cat.png" alt="Блок с текстом" width="560"
+                            height="415">
+                        <figcaption class="item-fig__caption"></figcaption>
+                    </figure>
+                    <p class="item-text">
+                        <strong>Важно:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
+                    </p>
+                    <p class="item-text">
+                        Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего
+                        соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
+                    </p>
+                    <p class="item-text item-one">
+                        (!) Свойства <i>margin-left</i> и <i>margin-top</i> используется крайне редко.
+                    </p>
+                    <p class="item-text item-one">
+                        Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях,
+                        например, для увеличения области ссылки.
+                    </p>
+                </div>
+                <div class="item">
+                    <figure class="item-fig2">
+                        <img class="item-fig2__img2" src="./img/indentat-one/section.png"
+                            alt="Важный заголовок описывающий секцию" width="560" height="279">
+                        <figcaption class="item-fig2__caption2"></figcaption>
+                    </figure>
+                    <p class="item-text">
+                        Отступ внутри блока сверху или слева реализуется
+                        через <i>padding-top</i> и <i>padding-left</i> родителя.
+                    </p>
+                    <p class="item-text">
+                        Отступы как правило, делают в направлении от
+                        предыдущего элемента к следующему. Так элемент
+                        не будет толкать сам себя.
+                    </p>
+                    <p class="item-text">
+                        Изначально элемент статичен, а его положение
+                        может менеться только под воздействием свойств других блоков или свойств родителя.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section class="section indentat-two">
+            <div class="container" id="indentation2">
+                <h2 class="indentation__title">Отступ задается последнему возможному элементу в DOM-дереве
+                </h2>
+                <p class="item-text">
+                    Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера,
+                    посмотрите на этот список:
+                </p>
+                <figure class="item-fig3">
+                    <img class="item-fig3__img3" src="./img/indentat-two/section-two.png"
+                        alt="Элементы DOM-дерева список" width="1080" height="537">
+                    <figcaption class="item-fig3__caption"></figcaption>
+                </figure>
+                <figure class="item-fig4">
+                    <img class="item-fig4__img4" src="./img/indentat-two/recept.png" alt="Полезные рецепты" width="600"
+                        height="450">
+                    <figcaption class="item-fig4__caption"></figcaption>
+                </figure>
+                <p class="item-text3">
+                    Отступ делают за счет соседних элементов, а не дочерних:
+                </p>
+
+                <div class="img-border">
+                    <figure class="item-fig5">
+                        <img class="item-fig5__img5" src="./img/indentat-two/recept-two.png" alt="Полезные рецепты"
+                            width="1080" height="427">
+                        <figcaption class="item-fig5__caption"></figcaption>
+                    </figure>
+                    <div class="border">
+                        <p class="border-text"><strong>Важно:</strong> здесь. <i>list-item</i> - последний возможный
+                            элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+                    </div>
+                </div>
+
+                <p class="item-text">
+                    Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обвёртке <i>&lt;article&gt;</i>
+                    для достижения той же цели.
+                    Внешне останется все точно также, но так делать не рекомендуется.
+                </p>
+                <p class="item-text">
+                    Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
+                </p>
+                <figure class="item-fig6">
+                    <img class="item-fig6__img6" src="./img/indentat-two/section_title.png"
+                        alt="Важный заголовок описывающий секцию" width="964" height="164">
+                    <figcaption class="item-fig6__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>.
+                    Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>.
+                    Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
+                </p>
+                <figure class="item-fig7">
+                    <img class="item-fig7__img7" src="./img/indentat-two/section_title-two.png"
+                        alt="Важный заголовок описывающий секцию" width="1022" height="504">
+                    <figcaption class="item-fig7__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    Это необходимо для более простого поиска отступов в будущем - для вас или того, кто будет верстать
+                    последнего
+                    вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстке с
+                    нестандартной
+                    структурой отступов.
+                </p>
+            </div>
+        </section>
+        <section class="section indentat-three">
+            <div class="container-two" id="indentation3">
+                <h2 class="indentation__title">Для последнего элемента группы отступ обнуляется</h2>
+                <p class="item-text">
+                    Для наглядности возьмем наш предыдущий пример с рецептами
+                </p>
+                <p class="item-text">
+                    Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое
+                    же.
+                </p>
+                <figure class="item-fig8">
+                    <img class="item-fig8__img8" src="./img/indentat-three/recept-three.png" alt="Полезные рецепты"
+                        width="600" height="600">
+                    <figcaption class="item-fig8__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задается
+                    через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих
+                    сторон, если расстояние
+                    между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
+                </p>
+                <figure class="item-fig9">
+                    <img class="item-fig9__img9" src="./img/indentat-three/recept-four.png" alt="Полезные рецепты"
+                        width="600" height="607">
+                    <figcaption class="item-fig9__caption"></figcaption>
+                </figure>
+                <figure class="item-fig10">
+                    <img class="item-fig10__img10" src="./img/indentat-three/cod-one.png" alt="Полезные рецепты"
+                        width="1080" height="528">
+                    <figcaption class="item-fig10__caption"></figcaption>
+                </figure>
+                <figure class="item-fig11">
+                    <img class="item-fig11__img11" src="./img/indentat-three/cod-two.png" alt="Вредные рецепты"
+                        width="1080" height="530">
+                    <figcaption class="item-fig11__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    Для большего понимания рассмотрим другой пример, который часто встречаться на практике:
+                </p>
+                <figure class="item-fig12">
+                    <img class="item-fig12__img12" src="./img/indentat-three/menu.png" alt="Меню" width="1080"
+                        height="88">
+                    <figcaption class="item-fig12__caption"></figcaption>
+                </figure>
+                <figure class="item-fig13">
+                    <img class="item-fig13__img13" src="./img/indentat-three/header.png" alt="Меню" width="806"
+                        height="475">
+                    <figcaption class="item-fig13__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами
+                    меню задаются так:
+                </p>
+                <figure class="item-fig14">
+                    <img class="item-fig14__img14" src="./img/indentat-three/menu-two.png" alt="Меню" width="317"
+                        height="110">
+                    <figcaption class="item-fig14__caption"></figcaption>
+                </figure>
+                <p class="item-text">
+                    Советую использовать псевдоклассы :last-child чаще других, например так:
+                </p>
+                <figure class="item-fig15">
+                    <img class="item-fig15__img15" src="./img/indentat-three/menu-three.png" alt="Меню" width="500"
+                        height="383">
+                    <figcaption class="item-fig15__caption"></figcaption>
+                </figure>
+            </div>
+
+        </section>
+        <section class="section itogi">
+            <div class="container">
+                <div class="itog">
+                    <h2 class="itog__title">Подитожим:
+                    </h2>
+                    <ul class="itog-list">
+                        <li class="itog-list__text">
+                            отступы задаём от предыдущего элемента к следующему
+                        </li>
+                        <li class="itog-list__text">
+                            используем только margin-right и margin-bottom
+                        </li>
+                        <li class="itog-list__text">
+                            Внешние отступы задаются только между соседями
+                        </li>
+                        <li class="itog-list__text">
+                            внутрений отступ задаём самому верхнему элементу в дом дереве
+                        </li>
+                        <li class="itog-list__text">
+                            последнему элементу группы отступ всегда обнуляем
+                        </li>
+                    </ul>
+                    <p class="text">
+                        Конечно бывают исключения. Ведь макеты бывают различной сложности.
+                        Иногда базовые принципы приходиться нарушать в угоду дизайнерского
+                        решения или простоты вёрстки. Но для этого эти принципы необходимо
+                        хорошо знать.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
